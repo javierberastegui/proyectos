@@ -1,0 +1,40 @@
+function formSubmitted(e){
+
+    const info = e.namedValues;
+    
+    
+    const contactArray = ContactsApp.getContactsByEmailAddress(info['Email Addres']);
+                                                                    
+    if(contactArray.length === 0){
+      addContact(info);
+    } else {
+      updateContact(contactArray[0],info)                                                              
+    }
+                                                                       
+  }
+  
+  
+  
+  
+  function addContact(info) {
+    
+    const c = ContactsApp.createContact(info['First Name'], info['Last Name'], info['Email Addres']);
+    c.addCompany(info['Company'], info['Phone']);
+    c.addPhone(ContactsApp.Field.MAIN_PHONE, info['Phone']);
+    const cg = ContactsApp.getContactGroups();
+    c.addToGroup(cg[3])
+  
+  
+  }
+  
+  function updateContact(c,info) {
+    
+    c.setGivenName(info['First Name']);
+    c.setFamilyName(info['Last Name']);
+    c.setFullName(info['First Name'] + " " + info['Last Name']);
+    c.getCompanies()[0].setCompanyName(info['Company']);
+    c.getPhones()[0].setPhoneNumber(info['Phone']);
+    
+  
+  }
+  

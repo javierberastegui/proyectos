@@ -1,0 +1,7 @@
+Cambiar:
+
+1. info['email addres'] ===> Español cabecera ===> info['Etiqueta de email del form']
+2. ir a editar - activadores del proyecto activo - añadir activador: 
+
+Seleccionar qué función ejecutar: formSubmitted
+4 (Selecciona el tipo de evento); opcion al enviarse el formulario 
