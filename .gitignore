@@ -4,3 +4,75 @@
 /Farmacia
 /Formulario contacto
 /Diplomas
+
+## Ignorar archivos de imagen 
+*.jpg 
+*.jpeg
+*.gif
+*.png
+*.tiff
+*.tif
+*.RAW
+*.bmp
+*.psd
+*.pdf
+*.eps
+*.pic
+*.pdf
+*.psd
+*.eps
+*.SVG
+*.AI
+*.DWG
+*.WebP
+
+# Ignorar formato de texto 
+*.txt
+*.docx
+*.doc
+*.docm
+*.dotx
+*.dotm
+*.xlxs
+*.xlsm
+*.xltx
+*.xltm
+*.xlsb
+*.xlam
+*.pptx
+*.pptm
+*.potx
+*.potm
+*.ppam
+*.ppsx
+*.ppsm
+*.sldx
+*.sldm
+*.thmx
+
+# Ignorar formato video - sonido
+
+*.avi
+*.mp4
+*.mpeg
+*.mwv
+*.mp3
+*.wav
+*.wma
+
+# Ignorar formato de ejecución de archivo menos .exe
+*.bat
+*.dll
+*.sys
+
+# Ignorar archivos de lectura
+*.epub
+*.azw
+*.ibook
+
+# Ignorar archivos de imagen de disco
+
+*.iso
+*.mds
+*.img
+
