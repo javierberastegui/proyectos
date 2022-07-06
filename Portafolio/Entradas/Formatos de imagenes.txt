@@ -1,0 +1,2 @@
+Formato imagen frontend portfolio = 810 * 594
+Logo de las librerias 
