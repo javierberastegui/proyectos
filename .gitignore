@@ -60,6 +60,7 @@
 *.mp3
 *.wav
 *.wma
+*.mkv
 
 # Ignorar formato de ejecución de archivo menos .exe
 *.bat
