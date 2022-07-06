@@ -2,7 +2,7 @@
 
 ------------
 
-Una Seccion De Github Elaborada Por [Francisco Javier Berastegui](Https://Bit.Ly/3rexa9m "Francisco Javier Berastegui"). 
+Una Seccion De Github Elaborada Por [Francisco Javier Berastegui](https://bit.ly/3ReXa9m "Francisco Javier Berastegui"). 
 
 ------------
 
