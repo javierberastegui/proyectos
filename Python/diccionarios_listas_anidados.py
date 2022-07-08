@@ -2,7 +2,7 @@ def run():
     lista = [1, "Maria", False, 8.8]
     diccionario = {"Nombre": "Javier", "Apellido": "Berastegui"}
 
-    super:lista = [
+    super_lista = [
         {"Nombre": "Javier", "Apellido": "Berastegui"}
         {"Nombre": "Adrian", "Apellido": "Hernandez"}
         {"Nombre": "Kevin", "Apellido": "de la Rosa"}
