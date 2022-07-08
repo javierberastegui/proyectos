@@ -10,6 +10,11 @@ def run():
         {"Nombre": "Alejandro", "Apellido": "Lorenzo"}
     ]
 
+    super_diccionario = {
+        "numero_decimal": [1.2, 2.5, 3.1, 2.2],
+        "numero_negativos": [-1, -2, -4, -8],
+    }
+
 
 if __name__ == '__main__':
     run()
