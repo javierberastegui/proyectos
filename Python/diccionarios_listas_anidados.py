@@ -1,13 +1,14 @@
 def run():
-    lista = [1, "Maria", False, 8.8]
-    diccionario = {"Nombre": "Javier", "Apellido": "Berastegui"}
+    lista = [1, "Alto", False, 8.8]
+    diccionario = {"firstname": "Javier", "lastname": "Berastegui"}
+    
 
     super_lista = [
-        {"Nombre": "Javier", "Apellido": "Berastegui"}
-        {"Nombre": "Adrian", "Apellido": "Hernandez"}
-        {"Nombre": "Kevin", "Apellido": "de la Rosa"}
-        {"Nombre": "Asahel", "Apellido": "Garcia"}
-        {"Nombre": "Alejandro", "Apellido": "Lorenzo"}
+        {"Nombre": "Javier", "Apellido": "Berastegui"},
+        {"Nombre": "Adrian", "Apellido": "Hernandez"},
+        {"Nombre": "Kevin", "Apellido": "de la Rosa"},
+        {"Nombre": "Asahel", "Apellido": "Garcia"},
+        {"Nombre": "Alejandro", "Apellido": "Lorenzo"},
     ]
 
     super_diccionario = {
