@@ -15,6 +15,8 @@ def run():
         "numero_negativos": [-1, -2, -4, -8],
     }
 
+    for llaves, valores in super_diccionario.items(): # Recorrer llaves y valores
+        print(llaves, "-", valores)
 
 if __name__ == '__main__':
     run()
