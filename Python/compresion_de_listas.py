@@ -1,12 +1,14 @@
-# Sin comprension de listas 
+# La magia de comprension de listas 😁😁
 
 def run():
-    cuagrados = []
-    for i in range(1, 70):
-        if i % 3 != 0:
-            cuagrados.append(i**6)
+#    cuagrados = []
+#    for i in range(1, 70):
+#        if i % 3 != 0:
+#            cuagrados.append(i**6)
 
-    print(cuagrados)
+    cuadrados = [i**6 for i in range(1, 70) if i % 3 != 0]
+
+    print(cuadrados)
 
 
 if __name__ == '__main__':
