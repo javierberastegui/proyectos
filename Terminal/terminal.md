@@ -18,4 +18,4 @@ En la siguiente linea comenzaremos con las creación de los alias
 
 ------------
 
-
+alias push="git push origin main"
