@@ -21,3 +21,4 @@ En la siguiente linea comenzaremos con las creación de los alias
 alias venv="source venv/bin/activate"
 alias push="git push origin main"
 alias pull="git pull origin main"
+alias add="git add ."
