@@ -34,7 +34,7 @@ def create_person(person: Person = Body (...) ): # Parametro person es de tipo P
 
 # Validación: Query Paramete
 
-@app.get("/person/detal")
+@app.get("/person/detail")
 def show_person(
 	name: Opcional[str] = Query(None,
 	min_length=1,
