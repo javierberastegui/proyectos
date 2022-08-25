@@ -39,7 +39,9 @@ def show_person(
 	name: Opcional[str] = Query(
 		None,
 		min_length=1,
-		max_length=40
+		max_length=40,
+		title="Person name"
+		descripcion="This is the person name. It's between 1 and 40 characters"
 		),
 	age: Opcional[int] = Query(
 		None,
