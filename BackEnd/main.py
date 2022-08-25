@@ -36,18 +36,13 @@ def create_person(person: Person = Body (...) ): # Parametro person es de tipo P
 
 @app.get("/person/detail")
 def show_person(
-	name: Opcional[str] = Query(
+	name: Optional[str] = Query(
 		None,
 		min_length=1,
 		max_length=40,
-		title="Person name"
-		descripcion="This is the person name. It's between 1 and 40 characters"
-		),
-	age: Opcional[int] = Query(
-		None,
-		min_length=1,
-		max_lenght=3
-		)   
+		title="Person name",
+		description="This is the person name. It's between 1 and 40 characters"
+		)
 ):
     return {name: age}
 
