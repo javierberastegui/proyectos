@@ -43,6 +43,7 @@ def show_person(
 		title="Person name",
 		description="This is the person name. It's between 1 and 40 characters"
 		)
+	age: int = Query(...)
 ):
     return {name: age}
 
