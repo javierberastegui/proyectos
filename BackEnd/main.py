@@ -45,8 +45,10 @@ def show_person(
 		),
 	age: int = Query(
 	...,
+	gt=1,
+	le=110,
 	title="Person age",
-	description="This is the person age. It's required"
+	description="This is the person age. It's required, it's between 1 and 110"
 		)
 ):
     return {name: age}
