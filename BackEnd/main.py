@@ -47,7 +47,7 @@ def show_person(
 	...,
 	title="Person age",
 	description="This is the person age. It's required"
-	)
+		)
 ):
     return {name: age}
 
