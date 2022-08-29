@@ -57,7 +57,9 @@ def show_person(
 def show_person(
 	person_id: int = Path(
 		...,
-		gt=0
+		gt=0,
+		title="Person id",
+		description="This is the person id. It's more than 0"
 		)
 ):
 	return {person_id: "It's good"}
