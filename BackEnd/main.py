@@ -23,8 +23,6 @@ class Person(BaseModel):
 def home():
 
   return {"Hola":"Mundo!"}
-
-  return {"Hola":"Mundo"}
   
 # body y response body 
   
