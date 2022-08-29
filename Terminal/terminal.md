@@ -19,7 +19,8 @@ En la siguiente linea comenzaremos con las creación de los alias
 ------------
 
 alias atajo="vim ~/.zshrc"
-alias venv="source venv/bin/activate"
 alias push="git push origin main"
 alias pull="git pull origin main"
 alias add="git add ."
+alias be="Proyectos/BackEnd && source venv/bin/activate"
+alias py="Proyectos/Python && source venv/bin/activate"
