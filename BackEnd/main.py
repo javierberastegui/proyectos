@@ -6,7 +6,7 @@ from pydantic import BaseModel # Crear modelos
 
 #FastAPI
 from fastapi import FastAPI
-from fastapi import Body, Query 
+from fastapi import Body, Query, Path 
 
 app = FastAPI()
 
