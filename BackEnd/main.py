@@ -39,6 +39,7 @@ class Person(BaseModel):
 		...,
 		min_length=1,
 		max_length=40
+	)
 	age: int = Field(
 		...,
 		gt=0,
