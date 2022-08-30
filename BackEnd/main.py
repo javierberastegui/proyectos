@@ -66,4 +66,17 @@ def show_person(
 ):
 	return {person_id: "It's good"}
 
+# Validation: Request Body
+## Tipo "put" actualiza la información cuando entres en el slug de a bajo indicado
 
+@app.put("/person/{person_id}")
+def update_person(
+	person_id: int = Path(
+		...,
+		title="Person id",
+		description="This is the person id",
+		gt=0
+	),
+	person: Person = Body(...)
+):
+	return person
