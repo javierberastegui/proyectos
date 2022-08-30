@@ -89,7 +89,6 @@ def update_person(
 
 	''' Unir dos JSON '''
 
-	result = dict(person)
-    result.update(dict(location))
-	
+	results = person.dict()
+    results.update(location.dict())	
 	return result
