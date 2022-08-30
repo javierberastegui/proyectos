@@ -91,4 +91,4 @@ def update_person(
 
 	results = person.dict()
     results.update(location.dict())	
-	return result
+	return results
