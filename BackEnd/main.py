@@ -86,9 +86,7 @@ def update_person(
 	person: Person = Body(...),
 	location: Location = Body(...)
 ):
-
-	''' Unir dos JSON '''
-
 	results = person.dict()
-    results.update(location.dict())	
+	results.update(location.dict())
 	return results
+	
