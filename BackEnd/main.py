@@ -12,6 +12,14 @@ app = FastAPI()
 
 ''' Creamos los modelos '''
 
+# Models
+
+class Location(BaseModel):
+	city: str
+	cp: int
+	state: str
+	country: str
+
 class Person(BaseModel):
 	nombre: str
 	apellido: str
@@ -75,8 +83,13 @@ def update_person(
 		description="This is the person id",
 		gt=0
 	),
-	person: Person = Body(...)
+	person: Person = Body(...),
+	location: Location = Body(...)
 ):
-	return person
 
+	''' Unir dos JSON '''
+
+	result = dict(person)
+    result.update(dict(location))
 	
+	return result
