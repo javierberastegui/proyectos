@@ -26,7 +26,7 @@ class HairColor(Enum):
 class Location(BaseModel):
 	city: str = Field(
 		min_length=1,
-		max_length=20,
+		max_length=100,
 		example="Santa Cruz"
 	)
 	cp: int = Field(
@@ -36,12 +36,12 @@ class Location(BaseModel):
 	)
 	state: str = Field(
 		min_length=1,
-		max_length=20,
+		max_length=100,
 		example="España"
 	)
 	country: str = Field(
 		min_length=1,
-		max_length=20,
+		max_length=100,
 		example="San Cristobal de La Laguna"
 	)
 
@@ -106,14 +106,16 @@ def show_person(
 		min_length=1,
 		max_length=40,
 		title="Person name",
-		description="This is the person name. It's between 1 and 40 characters"
+		description="This is the person name. It's between 1 and 40 characters",
+		example="Elena"
 		),
 	age: int = Query(
-	...,
-	gt=1,
-	le=110,
-	title="Person age",
-	description="This is the person age. It's required, it's between 1 and 110"
+		...,
+		gt=1,
+		le=110,
+		title="Person age",
+		description="This is the person age. It's required, it's between 1 and 110",
+		example=30
 		)
 ):
     return {name: age}
@@ -126,7 +128,8 @@ def show_person(
 		...,
 		gt=0,
 		title="Person id",
-		description="This is the person id. It's more than 0"
+		description="This is the person id. It's more than 0",
+		example=35
 		)
 ):
 	return {person_id: "It's good"}
@@ -141,7 +144,7 @@ def update_person(
 		title="Person id",
 		description="This is the person id",
 		gt=0,
-		example=25
+		example=35
 	),
 	#person: Person = Body(...),
 	location: Location = Body(...)
