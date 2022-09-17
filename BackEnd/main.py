@@ -140,12 +140,13 @@ def update_person(
 		...,
 		title="Person id",
 		description="This is the person id",
-		gt=0
+		gt=0,
+		example=25
 	),
-	person: Person = Body(...),
-	#location: Location = Body(...)
+	#person: Person = Body(...),
+	location: Location = Body(...)
 ):
 	#results = person.dict()
 	#results.update(location.dict())
 	#return results
-	return person
+	return location
