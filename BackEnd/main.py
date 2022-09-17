@@ -45,8 +45,19 @@ class Person(BaseModel):
 		gt=0,
 		le=110
 	)
-	color_pelo: Optional[HairColor] = Field(default=None)
-	estado_civil: Optional[bool] = Field(default=None)
+	hair_colour: Optional[HairColor] = Field(default=None)
+	is_maried: Optional[bool] = Field(default=None)
+
+	class Config:
+		schema_extra = {
+			"example":{
+				"firs_name": "Francisco Javier",
+				"last_name": "Berastegui Guigou",
+				"age": 31,
+				"hair_colour": "black",
+				"is_maried": True
+			}
+		}
 
 @app.get("/") #En el HOME se va a ejecutar x funcion 
 def home():
@@ -105,9 +116,9 @@ def update_person(
 		gt=0
 	),
 	person: Person = Body(...),
-	location: Location = Body(...)
+	#location: Location = Body(...)
 ):
-	results = person.dict()
-	results.update(location.dict())
-	return results
-	
+	#results = person.dict()
+	#results.update(location.dict())
+	#return results
+	return person
