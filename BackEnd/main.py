@@ -33,31 +33,42 @@ class Person(BaseModel):
 	firs_name: str = Field(
 		...,
 		min_length=1,
-		max_length=40
+		max_length=40,
+		example="Francisco Javier"
 	)
 	last_name: str = Field(
 		...,
 		min_length=1,
-		max_length=40
+		max_length=40,
+		example="Berastegui Guigou"
 	)
 	age: int = Field(
 		...,
 		gt=0,
-		le=110
+		le=110,
+		example=31
 	)
-	hair_colour: Optional[HairColor] = Field(default=None)
-	is_maried: Optional[bool] = Field(default=None)
+	hair_colour: Optional[HairColor] = Field(
+		default=None,
+		example="black"
+	)
+	is_maried: Optional[bool] = Field(
+		default=None,
+		example=True
+	)
 
-	class Config:
-		schema_extra = {
-			"example":{
-				"firs_name": "Francisco Javier",
-				"last_name": "Berastegui Guigou",
-				"age": 31,
-				"hair_colour": "black",
-				"is_maried": True
-			}
-		}
+''' Rellenar modelos automáticamente '''
+
+#	class Config:
+#		schema_extra = {
+#			"example":{
+#				"firs_name": "Francisco Javier",
+#				"last_name": "Berastegui Guigou",
+#				"age": 31,
+#				"hair_colour": "black",
+#				"is_maried": True
+#			}
+#		}
 
 @app.get("/") #En el HOME se va a ejecutar x funcion 
 def home():
