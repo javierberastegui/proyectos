@@ -34,9 +34,9 @@ header{
     height: 700px;
     background: #c31432;  
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.90)), url(../imagenes/setup.png);  
+    background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.50)), url(../imagenes/wallpaper.jpg);  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.90)), url(../imagenes/setup.png);  
+    background: linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.50)), url(../imagenes/wallpaper.jpg);  
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
