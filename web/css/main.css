@@ -31,12 +31,12 @@ body{
 
 header{
     width: 100%;
-    height: 600px;
+    height: 700px;
     background: #c31432;  
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.60)), url(../imagenes/Consola.png);  
+    background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.90)), url(../imagenes/setup.png);  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.60)), url(../imagenes/Consola.png);  
+    background: linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.90)), url(../imagenes/setup.png);  
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -77,6 +77,7 @@ nav > a:hover{
 
 .texto-headers h2{
     font-size: 3rem;
+    font-weight:300;
     color: #fff;
 }
 
@@ -85,3 +86,5 @@ nav > a:hover{
     bottom: 0;
     width: 100%;
 }
+
+/* Main Desarrollador Python Junior */
