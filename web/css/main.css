@@ -134,3 +134,33 @@ nav > a:hover{
 .titulo-sobre-mi{
     margin-top: 200px;
 }
+
+/* Galeria categorias-web */
+
+.categorias-web{
+    background: #f2f2f2;
+
+}
+
+.galeria-categorias-web{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-categorias{
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    object-fit: contain;
+}
+
+.imagen-categorias img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
