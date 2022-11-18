@@ -31,7 +31,7 @@ body{
 
 header{
     width: 100%;
-    height: 700px;
+    height: 1100px;
     background: #c31432;  
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.60), hsla(350, 81%, 42%, 0.50)), url(../imagenes/wallpaper.jpg);  
@@ -73,6 +73,7 @@ nav > a:hover{
 .texto-headers h1{
     font-size: 5rem;
     color: #fff;
+    margin-top: 25%;
 }
 
 .texto-headers h2{
@@ -88,3 +89,48 @@ nav > a:hover{
 }
 
 /* Main Desarrollador Python Junior */
+
+.contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobre-mi{
+    width: 70%;
+    justify-content: center;
+    margin-left: 300px;
+    border-radius: 2%;
+}
+
+.contenedor-sobre-mi .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.contenido-textos h3 span{
+    background-color: #4b152b;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 10px 5px;
+    margin-right: 300px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.titulo-sobre-mi{
+    margin-top: 200px;
+}
