@@ -206,3 +206,50 @@ nav > a:hover{
 }
 
 /* Conoce más sobre mi */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    border-radius: 20%;
+}
+
+.cards .card{
+    background: #620d1c;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 3px solid #fff;
+    border-radius: 20%;
+    background-color: #fff;
+    height: 100px;
+}
+
+.cards .card p{
+    color: #fff;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    font-weight: 300px;
+    padding-top: 5px;
+
+}
+
+.cards .card h4{
+    color: #fff;
+    margin-right: 70px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
