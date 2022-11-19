@@ -253,3 +253,33 @@ nav > a:hover{
     margin-top: 5px;
     margin-bottom: 20px;
 }
+
+/* Footer */
+
+footer{
+    background: #f2f2f2;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
