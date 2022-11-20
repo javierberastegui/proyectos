@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,7 +10,8 @@
     <meta name="robots" content="index,follow">
     <title>Este es el titulo de la pestaña web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'python/css/main.css' %}">
 </head>
 
 <body>
@@ -40,7 +43,7 @@
         </section>
         <section class="contenedor-sobre-mi">
             <div class="contenedor-desarrollador">
-                <img src="./imagenes/Consola.png" alt="Esto es una imagen sobre mi setup de trabajo"
+                <img src="{% static 'python/imagenes/Consola.png' %}" alt="Esto es una imagen sobre mi setup de trabajo"
                     class="imagen-sobre-mi">
             </div>
             <div class="contenido-textos">
@@ -79,26 +82,26 @@
                 <h2 class="titulo">Categorías Web</h2>
                 <div class="galeria-categorias-web">
                     <div class="imagen-categorias">
-                        <img class="cat-imag" src="./imagenes/python.png"
+                        <img class="cat-imag" src="{% static 'python/imagenes/python.png' %}"
                             alt="Esto es una imagen sobre aprender a programar en python">
                         <div class="hover-galeria">
-                            <img src="./imagenes/click.png" alt="Este icono representa apython">
+                            <img src="{% static 'python/imagenes/click.png' %}" alt="Este icono representa apython">
                             <p>Aprende a programar en python</p>
                         </div>
                     </div>
                     <div class="imagen-categorias">
-                        <img class="cat-imag" src="./imagenes/backend.png"
+                        <img class="cat-imag" src="{% static 'python/imagenes/backend.png' %}"
                             alt="Esto es una imagen sobre aprender backend de python">
                         <div class="hover-galeria">
-                            <img src="./imagenes/click.png" alt="Este icono representa apython">
+                            <img src="{% static 'python/imagenes/click.png' %}" alt="Este icono representa apython">
                             <p>Aprende a programar backend</p>
                         </div>
                     </div>
                     <div class="imagen-categorias">
-                        <img class="cat-imag" src="./imagenes/ciencia-datos.png"
+                        <img class="cat-imag" src="{% static 'python/imagenes/ciencia-datos.png' %}"
                             alt="Esto es una imagen sobre aprender ciencia de datos">
                         <div class="hover-galeria">
-                            <img src="./imagenes/click.png" alt="Este icono representa apython">
+                            <img src="{% static 'python/imagenes/click.png' %}" alt="Este icono representa apython">
                             <p>Aprende ciencia de datos</p>
                         </div>
                     </div>
@@ -111,7 +114,7 @@
                 romper y crear cosas. Pero sobre todo leer y documentarte, ¡La motivación lo es todo!</p>
             <div class="cards">
                 <div class="card">
-                    <img src="./imagenes/github-card.png" alt="Esta imagen es del logo de github">
+                    <img src="{% static 'python/imagenes/github-card.png' %}" alt="Esta imagen es del logo de github">
                     <div class="contenido-texto-card">
                         <h4>GitHub</h4>
                         <p>Si ya eres programador y necesitas copiar algo de mi código, descarga todo lo que necesites
@@ -120,7 +123,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./imagenes/platzi-card.png" alt="Esta imagen es del logo de platzi-card">
+                    <img src="{% static 'python/imagenes/platzi-card.png' %}" alt="Esta imagen es del logo de platzi-card">
                     <div class="contenido-texto-card">
                         <h4>Cursos realizados de programación</h4>
                         <p>Contrasta los conocimientos que he adquirido hasta el momento de programación, recuerda que
@@ -137,21 +140,21 @@
         </div>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <a title="Facebook" href="https://www.facebook.com/javiberastegui/"><img src="./imagenes/facebook.png"
+                <a title="Facebook" href="https://www.facebook.com/javiberastegui/"><img src="{% static 'python/imagenes/facebook.png' %}"
                         alt="Esta imagen representa el logo de Facebook" /></a>
             </div>
             <div class="content-foo">
                 <a title="Instagram" href="https://www.instagram.com/dev.javierberastegui/"><img
-                        src="./imagenes/Instagram_logo_2016.svg.png"
+                        src="{% static 'python/imagenes/Instagram_logo_2016.svg.png' %}"
                         alt="Esta imagen representa el logo de Instagram" /></a>
             </div>
             <div class="content-foo">
-                <a title="Twitter" href="https://twitter.com/javierberastegu"><img src="./imagenes/twitter-logo-6.png"
+                <a title="Twitter" href="https://twitter.com/javierberastegu"><img src="{% static 'python/imagenes/twitter-logo-6.png' %}"
                         alt="Esta imagen representa el logo de twitter" /></a>
             </div>
             <div class="content-foo">
                 <a title="GitHub" href="https://github.com/javierberastegui/proyectos"><img
-                        src="./imagenes/github-card.png" alt="Esta imagen representa el logo de github" /></a>
+                        src="{% static 'python/imagenes/github-card.png' %}" alt="Esta imagen representa el logo de github" /></a>
             </div>
         </div>
     </footer>
