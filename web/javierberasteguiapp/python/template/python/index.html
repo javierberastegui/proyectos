@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,7 +9,8 @@
     <meta name="robots" content="index,follow">
     <title>Este es el titulo de la pestaña web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link href="{% static 'python/main.css' %}" rel="stylesheet">
+    
 </head>
 
 <body>
