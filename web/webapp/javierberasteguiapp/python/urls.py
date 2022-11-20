@@ -19,6 +19,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.python, name="index")
+    path("python/", views.python, name="python")
 ]
 
+urlpatterns = [
+    path("", views.index, name="index")
+]
