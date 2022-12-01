@@ -8,8 +8,75 @@ html {
     font-size: 62.5%;
 }
 
-/* navegador */
+/* Header */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
 
 header nav {
-    
+    display: flex;
+    justify-content: flex-end;
+    background: #1c1d20;
+    height: 30px;
+}
+
+header nav .normal-nav {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .normal-nav a {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header .header--text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100;
+    min-width: 320px;
+    height: 480px;
+    text-align: center;
+    background: #6A9113;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header--text-container h1{
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.header--text-container h2{
+    margin-bottom: auto;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.ola {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
