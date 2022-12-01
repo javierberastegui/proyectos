@@ -1,11 +1,30 @@
+/* Modelos base */
+
+:root {
+    /* Font size */
+    --h1-size: 3rem;
+    --h2-size: 2.6rem;
+    --h3-size: 2.2rem;
+    --h4-size: 2rem;
+    --p-size: 1.6rem;
+    /* Color */
+    --nav-color: #1c1d20;
+    --texto-backgroun-negro: #fff;
+
+}
+
+*
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 html {
     font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Header */
@@ -27,7 +46,7 @@ header {
 header nav {
     display: flex;
     justify-content: flex-end;
-    background: #1c1d20;
+    background: var(--nav-color);
     height: 30px;
 }
 
@@ -43,7 +62,7 @@ header nav .normal-nav {
 nav .normal-nav a {
     margin-right: 20px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--texto-backgroun-negro);
 }
 
 header .header--text-container {
@@ -65,14 +84,17 @@ header .header--text-container {
 .header--text-container h1{
     margin-bottom: 20px;
     margin-top: 100px;
-    color: #fff;
-    font-size: 3rem;
+    color: var(--texto-backgroun-negro);
+    font-size: var(--h1-size);
+    font-weight: bold;
+    line-height: 3.2rem;
 }
 
 .header--text-container h2{
     margin-bottom: auto;
-    color: #fff;
-    font-size: 2rem;
+    color: var(--texto-backgroun-negro);
+    font-size: var(--h2-size);
+    font-weight: lighter;
 }
 
 .ola {
@@ -80,3 +102,5 @@ header .header--text-container {
     bottom: 0;
     width: 100%;
 }
+
+/* Main */
