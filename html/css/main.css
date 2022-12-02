@@ -10,6 +10,7 @@
     /* Color */
     --nav-color: #1c1d20;
     --texto-backgroun-negro: #fff;
+    --blanco-estrella: #FAF7F2;
 
 }
 
@@ -105,3 +106,31 @@ header .header--text-container {
 
 /* Main */
 
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--blanco-estrella);
+}
+
+.main-setup-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-section-setup--text {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.background-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('../imagenes/setup.png');
+}
