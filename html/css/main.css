@@ -280,7 +280,27 @@ main {
 }
 
 .category-card--ca {
-    
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--blanco-estrella);
+    border: 2px solid var(--verde-militar);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: var(--p-size);
+    color: var(--verde-militar);
+    cursor: pointer;
+}
+
+.category-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagenes/flecha-ico.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
 
 /* Main - contact - */
