@@ -415,7 +415,7 @@ footer nav {
     display: flex;
     justify-content: flex-end;
     background: var(--nav-color);
-    height: 30px;
+    height: 20px;
 }
 
 footer nav .politicas {
@@ -429,7 +429,7 @@ footer nav .politicas {
 
 nav .politicas a {
     margin-right: 10px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--texto-backgroun-negro);
 }
 
