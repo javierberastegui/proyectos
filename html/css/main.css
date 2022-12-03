@@ -7,11 +7,24 @@
     --h3-size: 2.2rem;
     --h4-size: 2rem;
     --p-size: 1.6rem;
+    --tamaño-minimo: 320px;
+    --tamaño-minimo-tarjetas: 288px;
+    --tamaño-minimo-tarjetas: 230px;
     /* Color */
     --nav-color: #1c1d20;
     --texto-backgroun-negro: #fff;
     --blanco-estrella: #FAF7F2;
-
+    --verde-militar: #394C38;
+    --negro: #000000;
+    --vino-duro: #2B021D;
+    --vino-suave: #70254e;
+    --purpura: #E5DDEA;
+    --gris: #dddbdb;
+    --gris-oscuro: #808080;
+    --gris-mas-oscuro: #333333;
+    --azul: #010028;
+    /* Efectos */
+    --sombra-oscura:0  4px 8px rgba(0, 0, 0, 0.16);
 }
 
 /* Buenas practicas */
@@ -72,8 +85,8 @@ header .header--text-container {
     flex-direction: column;
     justify-content: center;
     width: 100;
-    min-width: 320px;
-    height: 480px;
+    min-width: var(--tamaño-minimo);
+    height: 700px;
     text-align: center;
     background: #6A9113;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg);  /* Chrome 10-25, Safari 5.1-6 */
@@ -84,7 +97,7 @@ header .header--text-container {
 
 .header--text-container h1{
     margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 15px;   
     color: var(--texto-backgroun-negro);
     font-size: var(--h1-size);
     font-weight: bold;
@@ -92,7 +105,7 @@ header .header--text-container {
 }
 
 .header--text-container h2{
-    margin-bottom: auto;
+    margin-bottom: 25px;
     color: var(--texto-backgroun-negro);
     font-size: var(--h2-size);
     font-weight: lighter;
@@ -104,33 +117,253 @@ header .header--text-container {
     width: 100%;
 }
 
-/* Main */
+/* Main - sobre mi - */
 
 main {
+    margin-top: 200px;
     width: 100%;
     height: auto;
-    background-color: var(--blanco-estrella);
+    background-color: var(--texto-backgroun-negro);
 }
 
 .main-setup-container {
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 500px;
     padding-bottom: 30px;
     text-align: center;
 }
 
 .main-section-setup--text {
     width: 90%;
-    min-width: 288px;
+    min-width: var(--tamaño-minimo-tarjetas);
     max-width: 900px;
     margin: 0 auto;
 }
 
 .background-img {
-    width: 200px;
-    height: 200px;
+
+    height: 300px;
+    max-width: 450;
     margin: 0 auto;
     margin-bottom: 50px;
     background-image: url('../imagenes/setup.png');
+    border-radius: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.main-section-setup--text h2 {
+    color: var(--verde-militar);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: var(--h2-size);
+    font-weight: bold;
+}
+
+.main-section-setup--text p {
+    color: var(--negro);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: var(--p-size);
+    font-weight: normal;
+    text-align: justify;
+}
+
+.main-section-setup--text .margen-boton{
+    margin-bottom: 50px;
+}
+
+.main-section-setup--text .margen-boton2{
+    margin-top: 60px;
+}
+
+.boton {
+    border: 1px solid var(--blanco-estrella); /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: var(--verde-militar); /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    border-radius: 50px; /*bordes redondos*/
+    margin-top: 200px;
+    align-items: center;
+    }
+
+/* Main - categorias web - */
+
+.category {
+    background: #6A9113;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: var(--tamaño-minimo);
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.categorias-title h2{
+    width: 90%;
+    min-width: var(--tamaño-minimo-tarjetas);
+    height: auto;
+    margin: 0 auto; 
+    padding-top: 50px;
+    font-size: var(--h2-size);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blanco-estrella);
+}
+
+.categorias-title p {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: var(--p-size);
+    line-height: 1.8rem;
+    font-weight: normal;
+    color: var(--gris);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.categorias-container--card {
+    position: relative;
+    width: 70%;
+    min-width: var(--tamaño-minimo-tarjetas-pequeñas);
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--blanco-estrella);
+    border-radius: 15px;
+    box-shadow: var(--sombra-oscura);
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    background-color: var(--verde-militar);
+    border-radius: 8px;
+    color: var(--blanco-estrella);
+    font-size: 1.2rem;
+    padding: 6px;
+    font-weight: lighter;
+}
+
+.category-card--title {
+    padding-top: 30px;
+    font-size: var(--h3-size);
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--negro);
+}
+
+.category-card--body {
+    padding-top: 15px;
+    font-size: var(--h2-size);
+    font-weight: normal;
+    line-height: 2.5rem;
+    color: var(--nav-color);
+}
+
+.category-card--saving{
+    padding-top: 15px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 2rem;
+    color: var(--gris-oscuro);
+}
+
+.category-card--ca {
+    
+}
+
+/* Main - contact - */
+
+.main-contact-detail {
+    position: relative;
+    width: 100%;
+    min-width: var(--tamaño-minimo);
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--texto-backgroun-negro);
+}
+
+.contact-detail--title {
+    width: 90%;
+    min-width: var(--tamaño-minimo-tarjetas);
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: var(--h2-size);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--verde-militar)
+}
+
+.contact-detail--title p {
+    margin-bottom: 20px;
+    font-size: var(--p-size);
+    font-weight: lighter;
+    line-height: 1.8rem;
+    color: var(--negro);
+}
+
+.contact-detail--card {
+    width: 100%;
+    min-width: var(--tamaño-minimo-tarjetas);
+    max-width: 400px;
+    min-height: 150px;  /* evitar desbordamiento */
+    margin: 10px auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    background-color: var(--verde-militar);
+    border-radius: 5px;
+    box-shadow: 0  4px 8px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+/* logo tarjeta */
+.contact-detail--card .github {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-image: url("../imagenes/python-logo.svg");
+    /* Buenas practicas para background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-detail--card h3 {
+    margin-bottom: 15px;
+    font-size: var(--h3-size);
+    font-weight: bold;
+    line-height: var(--h3-size);
+    color: var(--blanco-estrella);
+}
+
+/* logo tarjeta */
+.contact-detail--card .cursos {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-image: url("../imagenes/web2.png");
+    /* Buenas practicas para background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
