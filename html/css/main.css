@@ -411,6 +411,28 @@ main {
 
 /* Footer */
 
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--nav-color);
+    height: 30px;
+}
+
+footer nav .politicas {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .politicas a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: var(--texto-backgroun-negro);
+}
+
 .derechos {
     width: 100%;
     background-color: var(--gris-mas-oscuro);
