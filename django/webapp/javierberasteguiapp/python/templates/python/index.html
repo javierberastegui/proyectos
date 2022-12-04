@@ -8,22 +8,12 @@
     <meta name="robots" content="index,follow">
     <title>Este es el titulo de la pestaña web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="./css/main.css" media="screen and (min-width: 600px)">
-    <link rel="stylesheet" href="./css/main.css" media="screen and (min-width: 800px)">
-=======
-    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 525px)">
-    <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width: 930px)">
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'python/css/main.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
         rel="stylesheet">
-<<<<<<< HEAD
-=======
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
 </head>
 
 <body>
@@ -32,10 +22,10 @@
             <nav>
                 <ul class="normal-nav">
                     <li>
-                        <a href="#" class="href">Inicio</a>
+                        <a href="{% url 'page:index' %}" class="href">Inicio</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Python</a>
+                        <a href="{% url 'page:recursos' %}" class="href">Python</a>
                     </li>
                     <li>
                         <a href="#" class="href">Web</a>
@@ -109,16 +99,10 @@
                 <article class="categorias-container--card">
                     <p class="etiqueta-nuevo">Nuevo</p>
                     <div class="category-info-container">
-<<<<<<< HEAD
-                        <h3 class="category-card--title">Recursos Python</h3>
-                        <p class="category-card--body">Aprende a programar</p>
+                        <h3 class="category-card--title">Programación</h3>
+                        <p class="category-card--body">Python</p>
                         <p class="category-card--saving">*El contenido se ira actualizando</p>
-                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo <span></span></button></a>
-=======
-                        <h3 class="category-card--title">Python</h3>
-                        <p class="category-card--body">Aprende programación en Python</p>
-                        <p class="category-card--saving">*El contenido se ira actualizando</p>
-                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
+                        <a class="boton-categorias" href="{% url 'page:recursos' %}"><button class="category-card--ca">Seguir leyendo
                                 <span></span></button></a>
                     </div>
                 </article>
@@ -126,7 +110,7 @@
                     <p class="etiqueta-nuevo">Proximamente</p>
                     <div class="category-info-container">
                         <h3 class="category-card--title">Web</h3>
-                        <p class="category-card--body">Aprende frontend y backend</p>
+                        <p class="category-card--body">Backend</p>
                         <p class="category-card--saving">*El contenido se ira actualizando</p>
                         <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
                                 <span></span></button></a>
@@ -135,69 +119,42 @@
                 <article class="categorias-container--card">
                     <p class="etiqueta-nuevo">Proximamente</p>
                     <div class="category-info-container">
-                        <h3 class="category-card--title">Datos</h3>
-                        <p class="category-card--body">Aprende ciencia de datos</p>
+                        <h3 class="category-card--title">Ciencia</h3>
+                        <p class="category-card--body">de datos</p>
                         <p class="category-card--saving">*El contenido se ira actualizando</p>
                         <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
                                 <span></span></button></a>
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
                     </div>
                 </article>
             </section>
         </section>
-<<<<<<< HEAD
-
-        <section class="main-contact-detail">
-            <div class="contact-detail--title">
-                <h2>Conoce más sobre mi</h2>
-            </div>
-            <section class="contact-cards--container">
-                <article class="contact-detail--card">
-                    <a href="#" style="display:block">
-=======
         <section class="main-contact--slider">
             <section class="main-contact-detail">
                 <div class="contact-detail--title">
                     <h2>Conoce más sobre mi</h2>
                 </div>
                 <section class="contact-cards--container">
-                    <a href="#" style="display:block"></a>
+                    <a class="contac-link" href="https://github.com/javierberastegui/proyectos" style="display:block">
                     <article class="contact-detail--card">
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
                         <span class="github"></span>
                         <h3>GitHub</h3>
                         <p>Si ya eres programador y necesitas copiar algo de mi código, descarga todo lo que necesites
                             de mi GitHub.</p>
-<<<<<<< HEAD
-                    </a>
-                </article>
-                <article class="contact-detail--card">
-                    <a href="#" style="display:block">
-=======
                         </a>
                     </article>
-                    <a href="#" style="display:block"></a>
+                    <a class="contac-link" href="https://platzi.com/p/javier.bg0391/" style="display:block">
                     <article class="contact-detail--card">
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
                         <span class="cursos"></span>
                         <h3>Cursos realizados de programación</h3>
                         <p>Contrasta los conocimientos que he adquirido hasta el momento de programación, recuerda que
                             esto se irá actualizando automáticamente.</p>
-<<<<<<< HEAD
-                    </a>
-                </article>
-=======
                         </a>
                     </article>
                 </section>
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
             </section>
         </section>
     </main>
     <footer>
-<<<<<<< HEAD
-
-=======
         <section>
             <nav>
                 <ul class="politicas">
@@ -211,7 +168,6 @@
             <p>Javier Berastegui 2022</p>
             <p>Todos los derechos reservados</p>
         </section>
->>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
     </footer>
 </body>
 
