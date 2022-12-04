@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,51 +8,64 @@
     <meta name="robots" content="index,follow">
     <title>Este es el titulo de la pestaña web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'python/css/main.css' %}">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./css/main.css" media="screen and (min-width: 800px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
+        <section>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Python</a>
-                <a href="#">web</a>
-                <a href="#">Contacto</a>
-                <a href="#">cv</a>
-            </nav>
-            <section class="texto-headers">
-                <h1>¿Qué es y cómo aprender a programar en python?</h1>
-                <h2>Una web-código donde aprenderás todo lo que tienes que saber</h2>
-            </section>
-            <div class="ola" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
-                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C264.10,206.75 221.22,19.25 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: #fff;"></path>
-                </svg></div>
-        </div>
-    </header>
-    <main>
-        <section class="titulo-sobre-mi">
-            <h2>
-                <h2 class="titulo" id="setup-sobre-mi">Desarrollador Python Junior</h2>
-            </h2>
+                <ul class="normal-nav">
+                    <li>
+                        <a href="#" class="href">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href">Python</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href">Web</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href">Contacto</a>
+                    </li>
+                </ul>
         </section>
-        <section class="contenedor-sobre-mi">
-            <div class="contenedor-desarrollador">
-                <img src="{% static 'python/imagenes/Consola.png' %}" alt="Esto es una imagen sobre mi setup de trabajo"
-                    class="imagen-sobre-mi">
+        <section>
+            <div class="header--text-container">
+                <h1>¿Qué es y cómo aprender a programar en python?</h1>
+                <h2>Una web-código donde aprenderás todo lo que tienes que saber sobro la programación en Python</h2>
+                <div><a class="boton" href="#categorias">Saber más</a></div>
+                <section>
+                    <div class="ola" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                            preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                            <path d="M0.00,49.99 C150.00,150.00 55.02,17.27 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                                style="stroke: none; fill: #fff;"></path>
+                        </svg></div>
+                </section>
             </div>
-            <div class="contenido-textos">
-                <h3><span>1</span>Francisco Javier Berastegui Guigou</h3>
+        </section>
+    </header>
+
+    <main>
+        <section class="main-setup-container">
+            <div class="background-img"></div>
+            <div class="main-section-setup--text">
+                <h2>Javier Berastegui | Desarrollador Python Junior</h2>
                 <p>¡Hola! Mi nombre es Javier Berastegui. Especialista en empresa y programador Junior Python, aquí
                     aprenderás a desarrollar tu carrera de backend y analista de datos.</p>
-                <p>Esta web-código la podrás utilizar como recurso para aprender Python con mis artículos donde
+                <p class="margen-boton">Esta web-código la podrás utilizar como recurso para aprender Python con mis
+                    artículos donde
                     aprenderás desde lo más básico a lo más avanzado. Recuerda que será necesario siempre recurrir a la
                     documentación oficial, toda la información expuesta en esta web es una síntesis de mi experiencia de
                     aprendizaje personal.</p>
-                <h3><span>2</span>¿Qué es Python?</h3>
+                <a class="boton" href="#">Contactemos</a>
+                <h2 class="margen-boton2">¿Qué es python?</h2>
                 <p>Python es un lenguaje de programación interpretado, es decir, no es necesario traducirlo a lenguaje
                     de máquina para que esté ejecute las funciones dentro del código que has desarrollado. Es conocido
                     como un lenguaje de programación orientado a objeto. Se trata de un lenguaje de programación
@@ -65,98 +76,65 @@
                     caracteriza a este lenguaje programación es la comunidad a la que pertenece, es un lenguaje donde
                     puedes encontrar información muy útil y de manera muy fácil, ya que las personas que lo saben como
                     funciona suelen compartir los conocimientos de este.</p>
-                <p>Mi recomendación en cuanto a si Python es el primer lenguaje de programación que deberías, es simple.
-                    Haz lo que pienses que te puede hacer feliz y con lo que realmente te sientas cómodo.</p>
-                <p>Este es uno de los fuertes de Python, tiene como filosofía la legibilidad de su código, y es ahí
+                <P>Mi recomendación en cuanto a si Python es el primer lenguaje de programación que deberías, es simple.
+                    Haz lo que pienses que te puede hacer feliz y con lo que realmente te sientas cómodo.</P>
+                <P>Este es uno de los fuertes de Python, tiene como filosofía la legibilidad de su código, y es ahí
                     donde reside su facilidad para ser aprendido. Es un lenguaje de programación que se parece mucho al
-                    lenguaje humano.</p>
-                <p>Mi experiencia personal con Python ha sido muy buena, debido a que en muchos casos escribes código
+                    lenguaje humano.</P>
+                <P>Mi experiencia personal con Python ha sido muy buena, debido a que en muchos casos escribes código
                     como hablas. Es un lenguaje muy dinámico y el aprendizaje es vertiginosamente rápido, después claro
-                    está, siempre puedes aprender cosas nuevas como todo en la vida.</p>
-                <p>Para mí Python es, sin lugar a dudas, el lenguaje de futuro. Qué en completo con otros, puedes lograr
-                    proyectos tan ambiciosos como es Netflix.</p>
+                    está, siempre puedes aprender cosas nuevas como todo en la vida.</P>
+                <P>Para mí Python es, sin lugar a dudas, el lenguaje de futuro. Qué en completo con otros, puedes lograr
+                    proyectos tan ambiciosos como es Netflix.</P>
             </div>
+
         </section>
-        <section class="categorias-web">
-            <div class="contenedor">
-                <h2 class="titulo">Categorías Web</h2>
-                <div class="galeria-categorias-web">
-                    <div class="imagen-categorias">
-                        <img class="cat-imag" src="{% static 'python/imagenes/python.png' %}"
-                            alt="Esto es una imagen sobre aprender a programar en python">
-                        <div class="hover-galeria">
-                            <img src="{% static 'python/imagenes/click.png' %}" alt="Este icono representa apython">
-                            <p>Aprende a programar en python</p>
-                        </div>
-                    </div>
-                    <div class="imagen-categorias">
-                        <img class="cat-imag" src="{% static 'python/imagenes/backend.png' %}"
-                            alt="Esto es una imagen sobre aprender backend de python">
-                        <div class="hover-galeria">
-                            <img src="{% static 'python/imagenes/click.png' %}" alt="Este icono representa apython">
-                            <p>Aprende a programar backend</p>
-                        </div>
-                    </div>
-                    <div class="imagen-categorias">
-                        <img class="cat-imag" src="{% static 'python/imagenes/ciencia-datos.png' %}"
-                            alt="Esto es una imagen sobre aprender ciencia de datos">
-                        <div class="hover-galeria">
-                            <img src="{% static 'python/imagenes/click.png' %}" alt="Este icono representa apython">
-                            <p>Aprende ciencia de datos</p>
-                        </div>
-                    </div>
-                </div>
+
+        <section id="categorias" class="category">
+            <div class="categorias-title">
+                <h2>Todos los recursos de programación</h2>
+                <p>Lo más importante que tienes que hacer para aprender a programar es la práctica, tienes que picar
+                    código, romper y crear cosas. Pero sobre todo leer y documentarte, ¡La motivación lo es todo!</p>
             </div>
+            <section class="categorias-cotainer--slider">
+                <article class="categorias-container--card">
+                    <p class="etiqueta-nuevo">Nuevo</p>
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Recursos Python</h3>
+                        <p class="category-card--body">Aprende a programar</p>
+                        <p class="category-card--saving">*El contenido se ira actualizando</p>
+                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo <span></span></button></a>
+                    </div>
+                </article>
+            </section>
         </section>
-        <section class="contenedor-sobre-otras-secciones-sobre-mi">
-            <h2 class="titulo">Conoce más sobre mi</h2>
-            <p>Lo más importante que tienes que hacer para aprender a programar es la práctica, tienes que picar código,
-                romper y crear cosas. Pero sobre todo leer y documentarte, ¡La motivación lo es todo!</p>
-            <div class="cards">
-                <div class="card">
-                    <img src="{% static 'python/imagenes/github-card.png' %}" alt="Esta imagen es del logo de github">
-                    <div class="contenido-texto-card">
-                        <h4>GitHub</h4>
+
+        <section class="main-contact-detail">
+            <div class="contact-detail--title">
+                <h2>Conoce más sobre mi</h2>
+            </div>
+            <section class="contact-cards--container">
+                <article class="contact-detail--card">
+                    <a href="#" style="display:block">
+                        <span class="github"></span>
+                        <h3>GitHub</h3>
                         <p>Si ya eres programador y necesitas copiar algo de mi código, descarga todo lo que necesites
-                            de mi GitHub</p>
-                        <button href="https://bit.ly/3prjijQ">Ver más</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="{% static 'python/imagenes/platzi-card.png' %}" alt="Esta imagen es del logo de platzi-card">
-                    <div class="contenido-texto-card">
-                        <h4>Cursos realizados de programación</h4>
+                            de mi GitHub.</p>
+                    </a>
+                </article>
+                <article class="contact-detail--card">
+                    <a href="#" style="display:block">
+                        <span class="cursos"></span>
+                        <h3>Cursos realizados de programación</h3>
                         <p>Contrasta los conocimientos que he adquirido hasta el momento de programación, recuerda que
                             esto se irá actualizando automáticamente.</p>
-                        <button href="http://bit.ly/3Ob2jOk">Ver más</button>
-                    </div>
-                </div>
-            </div>
+                    </a>
+                </article>
+            </section>
         </section>
     </main>
     <footer>
-        <div class="redes">
-            <h3>Sigueme en mis redes</h3>
-        </div>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <a title="Facebook" href="https://www.facebook.com/javiberastegui/"><img src="{% static 'python/imagenes/facebook.png' %}"
-                        alt="Esta imagen representa el logo de Facebook" /></a>
-            </div>
-            <div class="content-foo">
-                <a title="Instagram" href="https://www.instagram.com/dev.javierberastegui/"><img
-                        src="{% static 'python/imagenes/Instagram_logo_2016.svg.png' %}"
-                        alt="Esta imagen representa el logo de Instagram" /></a>
-            </div>
-            <div class="content-foo">
-                <a title="Twitter" href="https://twitter.com/javierberastegu"><img src="{% static 'python/imagenes/twitter-logo-6.png' %}"
-                        alt="Esta imagen representa el logo de twitter" /></a>
-            </div>
-            <div class="content-foo">
-                <a title="GitHub" href="https://github.com/javierberastegui/proyectos"><img
-                        src="{% static 'python/imagenes/github-card.png' %}" alt="Esta imagen representa el logo de github" /></a>
-            </div>
-        </div>
+
     </footer>
 </body>
 
