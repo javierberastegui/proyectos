@@ -142,6 +142,7 @@ main {
 }
 
 .background-img {
+<<<<<<< HEAD
 
     height: 300px;
     max-width: 450;
@@ -153,6 +154,17 @@ main {
     margin-right: 5px;
     background-size: cover;
     background-repeat: no-repeat;
+=======
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("../imagenes/setup.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+>>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
 }
 
 .main-section-setup--text h2 {
@@ -203,6 +215,7 @@ main {
     min-width: var(--tamaño-minimo);
     padding-bottom: 70px;
     text-align: center;
+<<<<<<< HEAD
 }
 
 .categorias-title h2{
@@ -314,6 +327,132 @@ main {
     background-color: var(--texto-backgroun-negro);
 }
 
+=======
+}
+
+.categorias-title h2{
+    width: 90%;
+    min-width: var(--tamaño-minimo-tarjetas);
+    height: auto;
+    margin: 0 auto; 
+    padding-top: 50px;
+    font-size: var(--h2-size);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blanco-estrella);
+}
+
+.categorias-title p {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: var(--p-size);
+    line-height: 1.8rem;
+    font-weight: normal;
+    color: var(--gris);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Main - scroll en trajetas - */
+
+.categorias-cotainer--slider {
+    display: flex;
+    gap: 5px;
+    height: 316;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.categorias-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: var(--tamaño-minimo-tarjetas-pequeñas);
+    max-width: 300px;
+    min-height: 250px;
+    margin: 50px 10px 0;
+    padding: 0 15px;
+    background-color: var(--blanco-estrella);
+    border-radius: 15px;
+    box-shadow: var(--sombra-oscura);
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    background-color: var(--verde-militar);
+    border-radius: 8px;
+    color: var(--blanco-estrella);
+    font-size: 1.2rem;
+    padding: 6px;
+    font-weight: lighter;
+}
+
+.category-card--title {
+    padding-top: 30px;
+    font-size: var(--h3-size);
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--negro);
+}
+
+.category-card--body {
+    padding-top: 15px;
+    font-size: var(--h2-size);
+    font-weight: normal;
+    line-height: 2.5rem;
+    color: var(--nav-color);
+}
+
+.category-card--saving{
+    padding-top: 15px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 2rem;
+    color: var(--gris-oscuro);
+}
+
+.category-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--blanco-estrella);
+    border: 2px solid var(--verde-militar);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: var(--p-size);
+    color: var(--verde-militar);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.category-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagenes/flecha-ico.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+/* Main - contact - */
+
+.main-contact-detail {
+    position: relative;
+    width: 100%;
+    min-width: var(--tamaño-minimo);
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--blanco-estrella);
+}
+
+>>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
 .contact-detail--title {
     width: 90%;
     min-width: var(--tamaño-minimo-tarjetas);
@@ -336,7 +475,11 @@ main {
     font-size: var(--p-size);
     font-weight: lighter;
     line-height: 1.8rem;
+<<<<<<< HEAD
     color: var(--negro);
+=======
+    color: var(--verde-militar);
+>>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
 }
 
 .contact-detail--card {
@@ -347,7 +490,11 @@ main {
     margin: 10px auto;
     margin-bottom: 50px;
     padding: 15px;
+<<<<<<< HEAD
     background-color: var(--verde-militar);
+=======
+    background-color: var(--gris);
+>>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
     border-radius: 5px;
     box-shadow: 0  4px 8px rgba(0, 0, 0, 0.16);
     cursor: pointer;
@@ -371,9 +518,24 @@ main {
     font-size: var(--h3-size);
     font-weight: bold;
     line-height: var(--h3-size);
+<<<<<<< HEAD
     color: var(--blanco-estrella);
 }
 
+=======
+    color: var(--verde-militar);
+}
+
+.contact-detail--card p {
+    margin-bottom: 15px;
+    font-size: var(--p-size);
+    font-weight: bold;
+    line-height: var(--h2-size);
+    color: var(--nav-color);
+}
+
+
+>>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a
 /* logo tarjeta */
 .contact-detail--card .cursos {
     display: inline-block;
@@ -385,5 +547,53 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+<<<<<<< HEAD
 }
 
+=======
+}
+
+/* Footer */
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--nav-color);
+    height: 20px;
+}
+
+footer nav .politicas {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .politicas a {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: var(--texto-backgroun-negro);
+}
+
+.derechos {
+    width: 100%;
+    background-color: var(--gris-mas-oscuro);
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100;
+    min-width: var(--tamaño-minimo);
+    height: 50px;
+    text-align: center;
+}
+
+footer p {
+    font-size: var(--p-size);
+    font-weight: normal;
+    color: var(--purpura);
+}
+>>>>>>> 53b6d9bc18741765a0f03aa1e9ec7c1b8beb702a

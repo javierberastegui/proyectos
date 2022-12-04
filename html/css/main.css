@@ -142,17 +142,15 @@ main {
 }
 
 .background-img {
-
-    height: 300px;
-    max-width: 450;
+    width: 300px;
+    height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url('../imagenes/setup.png');
-    border-radius: 5%;
-    margin-left: 5px;
-    margin-right: 5px;
+    background-image: url("../imagenes/setup.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    border-radius: 5%;
 }
 
 .main-section-setup--text h2 {
@@ -228,13 +226,25 @@ main {
     margin-right: 5px;
 }
 
+/* Main - scroll en trajetas - */
+
+.categorias-cotainer--slider {
+    display: flex;
+    gap: 5px;
+    height: 316;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .categorias-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: var(--tamaño-minimo-tarjetas-pequeñas);
     max-width: 300px;
-    height: 250px;
-    margin: 50px auto 0;
+    min-height: 250px;
+    margin: 50px 10px 0;
     padding: 0 15px;
     background-color: var(--blanco-estrella);
     border-radius: 15px;
@@ -290,6 +300,7 @@ main {
     font-size: var(--p-size);
     color: var(--verde-militar);
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .category-card--ca span {
@@ -311,7 +322,7 @@ main {
     min-width: var(--tamaño-minimo);
     height: auto;
     padding: 20px 10px;
-    background-color: var(--texto-backgroun-negro);
+    background-color: var(--blanco-estrella);
 }
 
 .contact-detail--title {
@@ -336,7 +347,7 @@ main {
     font-size: var(--p-size);
     font-weight: lighter;
     line-height: 1.8rem;
-    color: var(--negro);
+    color: var(--verde-militar);
 }
 
 .contact-detail--card {
@@ -347,7 +358,7 @@ main {
     margin: 10px auto;
     margin-bottom: 50px;
     padding: 15px;
-    background-color: var(--verde-militar);
+    background-color: var(--gris);
     border-radius: 5px;
     box-shadow: 0  4px 8px rgba(0, 0, 0, 0.16);
     cursor: pointer;
@@ -371,8 +382,17 @@ main {
     font-size: var(--h3-size);
     font-weight: bold;
     line-height: var(--h3-size);
-    color: var(--blanco-estrella);
+    color: var(--verde-militar);
 }
+
+.contact-detail--card p {
+    margin-bottom: 15px;
+    font-size: var(--p-size);
+    font-weight: bold;
+    line-height: var(--h2-size);
+    color: var(--nav-color);
+}
+
 
 /* logo tarjeta */
 .contact-detail--card .cursos {
@@ -387,3 +407,46 @@ main {
     background-repeat: no-repeat;
 }
 
+/* Footer */
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--nav-color);
+    height: 20px;
+}
+
+footer nav .politicas {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .politicas a {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: var(--texto-backgroun-negro);
+}
+
+.derechos {
+    width: 100%;
+    background-color: var(--gris-mas-oscuro);
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100;
+    min-width: var(--tamaño-minimo);
+    height: 50px;
+    text-align: center;
+}
+
+footer p {
+    font-size: var(--p-size);
+    font-weight: normal;
+    color: var(--purpura);
+}
