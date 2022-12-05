@@ -23,6 +23,7 @@
     --gris-oscuro: #808080;
     --gris-mas-oscuro: #333333;
     --azul: #010028;
+    --blog: #2a3d69;
     /* Efectos */
     --sombra-oscura:0  4px 8px rgba(0, 0, 0, 0.16);
 }
@@ -86,29 +87,32 @@ header .header--text-container {
     justify-content: center;
     width: 100;
     min-width: var(--tamaño-minimo);
-    height: 700px;
+    height: 300px;
     text-align: center;
-    background: #6A9113;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #BA8B02;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(45, 98%, 37%, 0.6), hsla(225, 7%, 12%, 0.7)), url(../imagenes/codigo-portada-python-pequeño.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(45, 98%, 37%, 0.4), hsla(225, 7%, 12%, 0.5)), url(../imagenes/codigo-portada-python-pequeño.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-size: cover;
     background-attachment: fixed;
 }
 
-.header--text-container h1{
+.header--text-container h3{
     margin-bottom: 20px;
     margin-top: 15px;   
     color: var(--texto-backgroun-negro);
-    font-size: var(--h1-size);
+    font-size: var(--h3-size);
     font-weight: bold;
     line-height: 3.2rem;
 }
 
-.header--text-container h2{
+.header--text-container p{
     margin-bottom: 25px;
     color: var(--texto-backgroun-negro);
-    font-size: var(--h2-size);
+    font-size: var(--p-size);
     font-weight: lighter;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
 }
 
 .ola {
@@ -126,15 +130,15 @@ main {
     background-color: var(--texto-backgroun-negro);
 }
 
-.main-setup-container {
+.main-intro-container {
     width: 100%;
     height: auto;
-    padding-top: 500px;
+    padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.main-section-setup--text {
+.main-section-intro--text {
     width: 90%;
     min-width: var(--tamaño-minimo-tarjetas);
     max-width: 900px;
@@ -153,14 +157,7 @@ main {
     border-radius: 5%;
 }
 
-@media screen and (min-width: 930px) {
-    .background-img {
-        width: 450px;
-        height: 350px;
-    }
-}
-
-.main-section-setup--text h2 {
+.main-section-intro--text h2 {
     color: var(--verde-militar);
     margin-bottom: 20px;
     margin-top: 25px;
@@ -168,20 +165,22 @@ main {
     font-weight: bold;
 }
 
-.main-section-setup--text p {
+.main-section-intro--text p {
     color: var(--negro);
     margin-bottom: 20px;
     margin-top: 25px;
     font-size: var(--p-size);
     font-weight: normal;
     text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.main-section-setup--text .margen-boton{
+.main-section-intro--text .margen-boton{
     margin-bottom: 50px;
 }
 
-.main-section-setup--text .margen-boton2{
+.main-section-intro--text .margen-boton2{
     margin-top: 60px;
 }
 
@@ -199,10 +198,9 @@ main {
 /* Main - categorias web - */
 
 .category {
-    background: #6A9113;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(220, 7%, 8%, 0.98), hsla(79, 77%, 32%, 0.7)), url(../imagenes/Walpapper\ web.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    background-size: cover;
+    background: #BA8B02;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(45, 98%, 37%, 0.6), hsla(225, 7%, 12%, 0.7)), url(../imagenes/codigo-portada-python-pequeño.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(45, 98%, 37%, 0.4), hsla(225, 7%, 12%, 0.5)), url(../imagenes/codigo-portada-python-pequeño.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       background-size: cover;
     background-attachment: fixed;
     width: 100%;
     min-width: var(--tamaño-minimo);
@@ -253,7 +251,6 @@ main {
         justify-content: center;
 }
 }
-
 
 .categorias-container--card {
     position: relative;
@@ -332,9 +329,9 @@ main {
     vertical-align: text-bottom;
 }
 
-/* Main - contact - */
+/* Main - post - */
 
-.main-contact-detail {
+.main-post-detail {
     position: relative;
     width: 100%;
     min-width: var(--tamaño-minimo);
@@ -343,7 +340,7 @@ main {
     background-color: var(--blanco-estrella);
 }
 
-.contact-detail--title {
+.post-detail--title {
     width: 90%;
     min-width: var(--tamaño-minimo-tarjetas);
     height: auto;
@@ -352,7 +349,7 @@ main {
     text-align: center;
 }
 
-.contact-detail--title h2 {
+.post-detail--title h2 {
     margin-bottom: 20px;
     font-size: var(--h2-size);
     font-weight: bold;
@@ -360,7 +357,7 @@ main {
     color: var(--verde-militar)
 }
 
-.contact-detail--title p {
+.post-detail--title p {
     margin-bottom: 20px;
     font-size: var(--p-size);
     font-weight: lighter;
@@ -368,64 +365,39 @@ main {
     color: var(--verde-militar);
 }
 
-.contact-detail--card {
+.post-detail--card {
     width: 100%;
     min-width: var(--tamaño-minimo-tarjetas);
-    max-width: 400px;
+    max-width: 1500px;
     min-height: 150px;  /* evitar desbordamiento */
-    margin: 10px auto;
-    margin-bottom: 50px;
+    margin: 25px auto;
+    margin-bottom: 25px;
     padding: 15px;
-    background-color: var(--gris);
-    border-radius: 5px;
-    box-shadow: 0  4px 8px rgba(0, 0, 0, 0.16);
+    background-color: var(--blog);
+    border-radius: 10px;
+    box-shadow: 4px  10px 10px hsla(329, 86%, 14%, 0.70);
     cursor: pointer;
 }
 
-/* logo tarjeta */
-.contact-detail--card .github {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    background-image: url("../imagenes/python-logo.svg");
-    /* Buenas practicas para background */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.contact-detail--card h3 {
+
+.post-detail--card h2 {
     margin-bottom: 15px;
     font-size: var(--h3-size);
-    font-weight: bold;
+    font-weight: lighter;
     line-height: var(--h3-size);
-    color: var(--verde-militar);
+    color: var(--blanco-estrella);
 }
 
-.contact-detail--card p {
+.post-detail--card p {
     margin-bottom: 15px;
     font-size: var(--p-size);
-    font-weight: bold;
+    font-weight: normal;
     line-height: var(--h2-size);
-    color: var(--nav-color);
+    color: var(--purpura);
 }
 
-
-/* logo tarjeta */
-.contact-detail--card .cursos {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    background-image: url("../imagenes/web2.png");
-    /* Buenas practicas para background */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.contact-cards--container .contact-card--link {
+.main-post-detail .post-card-link{
     text-decoration: none;
 }
 
