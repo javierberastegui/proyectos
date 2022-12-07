@@ -82,16 +82,6 @@
             </div>
             <section class="categorias-cotainer--slider">
                 <article class="categorias-container--card">
-                    <p class="etiqueta-nuevo">Nuevo</p>
-                    <div class="category-info-container">
-                        <h3 class="category-card--title">Programación</h3>
-                        <p class="category-card--body">Python</p>
-                        <p class="category-card--saving">*El contenido se ira actualizando</p>
-                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
-                                <span></span></button></a>
-                    </div>
-                </article>
-                <article class="categorias-container--card">
                     <p class="etiqueta-nuevo">Proximamente</p>
                     <div class="category-info-container">
                         <h3 class="category-card--title">Web</h3>
@@ -130,7 +120,7 @@
                         dependiendo estos de otras variables, así como de una serie de parámetros y de...</p>
                     </a>
                 </article>
-                <a class="post-card-link" href="#" style="display:block">
+                <a class="post-card-link" href="{% url 'post:post1' %}" style="display:block">
                 <article class="post-detail--card">
                     <h2>Hola mundo!! Introducción a la programación con Python</h2>
                     <p>Bienvenido a mi espacio personal, mi nombre es Javier Berastegui y en esta sección mi objetivo es

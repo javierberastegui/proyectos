@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Descripcion de google-->
+    <meta name="description" content="Bienvenido a mi espacio personal, mi nombre es Javier Berastegui y en esta sección mi objetivo es la introducción en el apasionante mundo de la programación de la mano de PYTHON.">
+    <meta name="robots" content="index,follow">
+    <!--Titulo de pestaña-->
+    <title>Introducción a la programación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'post/post-1.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <nav>
+                <ul class="normal-nav">
+                    <li>
+                        <a href="{% url 'page:index' %}" class="href">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:python' %}" class="href">Python</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href">Web</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href">Contacto</a>
+                    </li>
+                </ul>
+        </section>
+        <section>
+            <div class="header--text-container">
+                <h1>Introducción a la programación con Python</h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- seccion Texto -->
+        <section class="main-intro-container">
+            <div class="main-section-intro--text">
+                <p>Bienvenido a mi espacio personal, mi nombre es Javier Berastegui y en esta sección mi objetivo es la
+                    introducción en el apasionante mundo de la programación de la mano de PYTHON.</p>
+                <p>Las razones básicas por las que Python es uno de los mejores lenguajes de programación y por las que
+                    en su día me plantee estudiar dicho lenguaje:</p>
+                <ul>
+                    <li>Hasta el momento no me habia adentrado en la programación.</li>
+                    <li>La manera en la que se escribe fue bastante cómoda, simple para ser estudiada y aprenderla.</li>
+                    <li>Tiene una enorme comunidad, lo que quiere decir, que cuando tuve problemas con algún logaritmo,
+                        puede buscar en su propia documentación.</li>
+                    <li>Y finalmente, mi crecimiento personal. Desde que era muy pequeño siempre me gustaba la
+                        informática.</li>
+                </ul>
+                <p>Por otro lado, Python tiene una gran cantidad de usos, desde el internet of things, hasta el
+                    procesamiento de datos (que es donde yo personalmente me siento más cómodo programando con Python),
+                    la inteligencia artificial o el Back-end.</p>
+                <p>Entrando un poco en materia, me gustaría aclarar el significado de algoritmo debido a que al
+                    principio esto suena a ingeniería cuántica y ni nada que ver con la realidad. Un algoritmo es tan
+                    solo encontrar la solución a un problema mediante un lenguaje de programación (en mi caso Python),
+                    siendo este finito, claro y ordenado.</p>
+                <p>Para ello, la mejor manera es utilizar un diagrama de flujo y según vayamos recorriendo metros hacia
+                    nuestra meta final (el problema que queremos resolver), guardaremos la forma gráfica con la que
+                    hemos llegado a esta solución, para despues poder mejorar, añadir, sin tener que buscar de nuevo
+                    dentro de nuestro código, evitando duplicidad, etc.</p>
+                <p>Para aclarar todo esto (y aunque parezca muy estúpido), vamos a picar algo de código que nos ayude a
+                    entender el concepto algoritmo en Python:</p>
+                <ol class="numero">
+                    <li>Hasta el momento no me habia adentrado en la programación.</li>
+                    <li>La manera en la que se escribe fue bastante cómoda, simple para ser estudiada y aprenderla.</li>
+                    <li>Tiene una enorme comunidad, lo que quiere decir, que cuando tuve problemas con algún logaritmo,
+                        puede buscar en su propia documentación.</li>
+                    <li>Y finalmente, mi crecimiento personal. Desde que era muy pequeño siempre me gustaba la
+                        informática.</li>
+                </ol>
+                <div class="background-img"></div>
+                <p>Aquí estamos viendo ya varias cosas, en primer lugar, en la primera línea se puede ver los
+                    comentarios, que son notas simples para entender nuestro código, es decir, comentarlo, donde la “#“
+                    omitirá lo que escribamos aquí.</p>
+
+                <p>En segundo lugar, la variable “hi“ que es simplemente el nombre de la “caja” que vamos a emplear en
+                    nuestro algoritmo (tranquilos, en nuestro siguiente post, les hablaré un poco mejor del concepto
+                    variable).</p>
+
+                <p>Finalmente, imprimir el resultado con nuestro famoso “print(variable)“. Con esto revisaremos si
+                    nuestro código es el deseado o de lo contrario tenemos algún error en el mismo.</p>    
+
+                <p>Así de simple es Python, como comente antes, en las siguientes entradas iremos un poco más a dentro
+                    de lo que son las variables y sus posibles usos.</p>
+            </div>
+        </section>
+        <!-- Seccion carrusel de categorias -->
+        <section id="categorias" class="category">
+            <div class="categorias-title">
+                <h2>Todos los recursos de programación</h2>
+                <p>Lo más importante que tienes que hacer para aprender a programar es la práctica, tienes que picar
+                    código, romper y crear cosas. Pero sobre todo leer y documentarte, ¡La motivación lo es todo!</p>
+            </div>
+            <section class="categorias-cotainer--slider">
+                <article class="categorias-container--card">
+                    <p class="etiqueta-nuevo">Nuevo</p>
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Programación</h3>
+                        <p class="category-card--body">Python</p>
+                        <p class="category-card--saving">*El contenido se ira actualizando</p>
+                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
+                                <span></span></button></a>
+                    </div>
+                </article>
+                <article class="categorias-container--card">
+                    <p class="etiqueta-nuevo">Proximamente</p>
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Web</h3>
+                        <p class="category-card--body">Backend</p>
+                        <p class="category-card--saving">*El contenido se ira actualizando</p>
+                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
+                                <span></span></button></a>
+                    </div>
+                </article>
+                <article class="categorias-container--card">
+                    <p class="etiqueta-nuevo">Proximamente</p>
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Ciencia</h3>
+                        <p class="category-card--body">Datos</p>
+                        <p class="category-card--saving">*El contenido se ira actualizando</p>
+                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
+                                <span></span></button></a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul class="politicas">
+                    <li>
+                        <a href="#" class="href">Aviso privacidad</a>
+                        <a href="#" class="href">Cookies</a>
+                    </li>
+                </ul>
+        </section>
+        <section class="derechos">
+            <p>Javier Berastegui 2022</p>
+            <p>Todos los derechos reservados</p>
+        </section>
+    </footer>
+</body>
+
+</html>

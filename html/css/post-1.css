@@ -25,7 +25,7 @@
     --azul: #010028;
     --blog: #2a3d69;
     /* Efectos */
-    --sombra-oscura:0  4px 8px rgba(0, 0, 0, 0.16);
+    --sombra-oscura: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
 /* Buenas practicas */
@@ -39,7 +39,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Ubuntu', sans-serif; /* Fuente del proyecto */
+    font-family: 'Ubuntu', sans-serif;
+    /* Fuente del proyecto */
 }
 
 /* Header */
@@ -89,16 +90,17 @@ header .header--text-container {
     min-width: var(--tamaño-minimo);
     height: 200px;
     text-align: center;
-    background: #BA8B02;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(45, 98%, 37%, 0.6), hsla(225, 7%, 12%, 0.7)), url(../imagenes/codigo-portada-python-pequeño.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(45, 98%, 37%, 0.4), hsla(225, 7%, 12%, 0.5)), url(../imagenes/codigo-portada-python-pequeño.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #283c86;
+    background: -webkit-linear-gradient(to right, hsla(121, 40%, 45%, 0.616), hsla(227, 54%, 34%, 0.527)), url(../imagenes/wallpaper-post-mediano.jpg);
+    background: linear-gradient(to right, hsla(121, 40%, 45%, 0.363), hsla(227, 54%, 34%, 0.61)), url(../imagenes/wallpaper-post-mediano.jpg); 
     background-size: cover;
     background-attachment: fixed;
 }
 
-.header--text-container h1{
+
+.header--text-container h1 {
     margin-bottom: 20px;
-    margin-top: 15px;   
+    margin-top: 15px;
     color: var(--texto-backgroun-negro);
     font-size: var(--h1-size);
     font-weight: bold;
@@ -151,6 +153,7 @@ main {
     margin-left: 40px;
     line-height: 2.5rem;
 }
+
 .background-img {
     width: 300px;
     height: 200px;
@@ -161,6 +164,18 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
+}
+
+@media screen and (min-width: 570px) {
+    .background-img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .background-img {
+        width: 500px;
+    }
 }
 
 .main-section-intro--text {
@@ -189,31 +204,38 @@ main {
     margin-right: 5px;
 }
 
-.main-section-intro--text .margen-boton{
+.main-section-intro--text .margen-boton {
     margin-bottom: 50px;
 }
 
-.main-section-intro--text .margen-boton2{
+.main-section-intro--text .margen-boton2 {
     margin-top: 60px;
 }
 
 .boton {
-    border: 1px solid var(--blanco-estrella); /*anchura, estilo y color borde*/
-    padding: 10px; /*espacio alrededor texto*/
-    background-color: var(--verde-militar); /*color botón*/
-    color: #ffffff; /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    border-radius: 50px; /*bordes redondos*/
+    border: 1px solid var(--blanco-estrella);
+    /*anchura, estilo y color borde*/
+    padding: 10px;
+    /*espacio alrededor texto*/
+    background-color: var(--verde-militar);
+    /*color botón*/
+    color: #ffffff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    border-radius: 50px;
+    /*bordes redondos*/
     margin-top: 200px;
     align-items: center;
-    }
+}
 
 /* Main - categorias web - */
 
 .category {
-    background: #BA8B02;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(45, 98%, 37%, 0.6), hsla(225, 7%, 12%, 0.7)), url(../imagenes/codigo-portada-python-pequeño.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(45, 98%, 37%, 0.4), hsla(225, 7%, 12%, 0.5)), url(../imagenes/codigo-portada-python-pequeño.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       background-size: cover;
+    background: #283c86;
+    background: -webkit-linear-gradient(to right, hsla(121, 40%, 45%, 0.8), hsla(227, 54%, 34%, 0.8)), url(../imagenes/Walpapper\ web.jpg);
+    background: linear-gradient(to right, hsla(121, 40%, 45%, 0.8), hsla(227, 54%, 34%, 0.8)), url(../imagenes/Walpapper\ web.jpg);    
+    background-size: cover;
     background-attachment: fixed;
     width: 100%;
     min-width: var(--tamaño-minimo);
@@ -221,11 +243,20 @@ main {
     text-align: center;
 }
 
-.categorias-title h2{
+@media screen and (min-width: 930px) {
+    .category {
+        background: -webkit-linear-gradient(to right, hsla(121, 40%, 45%, 0.8), hsla(227, 54%, 34%, 0.8)), url(../imagenes/Walpapper\ web.jpg);
+        background: linear-gradient(to right, hsla(121, 40%, 45%, 0.8), hsla(227, 54%, 34%, 0.8)), url(../imagenes/Walpapper\ web.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.categorias-title h2 {
     width: 90%;
     min-width: var(--tamaño-minimo-tarjetas);
     height: auto;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding-top: 50px;
     font-size: var(--h2-size);
     font-weight: bold;
@@ -262,7 +293,7 @@ main {
 @media screen and (min-width: 930px) {
     .categorias-cotainer--slider {
         justify-content: center;
-}
+    }
 }
 
 .categorias-container--card {
@@ -309,7 +340,7 @@ main {
     color: var(--nav-color);
 }
 
-.category-card--saving{
+.category-card--saving {
     padding-top: 15px;
     font-size: 1.2rem;
     font-weight: normal;
@@ -342,77 +373,7 @@ main {
     vertical-align: text-bottom;
 }
 
-/* Main - post - */
 
-.main-post-detail {
-    position: relative;
-    width: 100%;
-    min-width: var(--tamaño-minimo);
-    height: auto;
-    padding: 20px 10px;
-    background-color: var(--blanco-estrella);
-}
-
-.post-detail--title {
-    width: 90%;
-    min-width: var(--tamaño-minimo-tarjetas);
-    height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.post-detail--title h2 {
-    margin-bottom: 20px;
-    font-size: var(--h2-size);
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--verde-militar)
-}
-
-.post-detail--title p {
-    margin-bottom: 20px;
-    font-size: var(--p-size);
-    font-weight: lighter;
-    line-height: 1.8rem;
-    color: var(--verde-militar);
-}
-
-.post-detail--card {
-    width: 100%;
-    min-width: var(--tamaño-minimo-tarjetas);
-    max-width: 1500px;
-    min-height: 150px;  /* evitar desbordamiento */
-    margin: 25px auto;
-    margin-bottom: 25px;
-    padding: 15px;
-    background-color: var(--blog);
-    border-radius: 10px;
-    box-shadow: 4px  10px 10px hsla(329, 86%, 14%, 0.70);
-    cursor: pointer;
-}
-
-
-
-.post-detail--card h2 {
-    margin-bottom: 15px;
-    font-size: var(--h3-size);
-    font-weight: lighter;
-    line-height: var(--h3-size);
-    color: var(--blanco-estrella);
-}
-
-.post-detail--card p {
-    margin-bottom: 15px;
-    font-size: var(--p-size);
-    font-weight: normal;
-    line-height: var(--h2-size);
-    color: var(--purpura);
-}
-
-.main-post-detail .post-card-link{
-    text-decoration: none;
-}
 
 /* Footer */
 
