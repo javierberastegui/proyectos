@@ -1,0 +1,228 @@
+/* Modelos base */
+
+:root {
+    /* Font size */
+    --h1-size: 3rem;
+    --h2-size: 2.6rem;
+    --h3-size: 2.2rem;
+    --h4-size: 2rem;
+    --p-size: 1.6rem;
+    --tamaño-minimo: 320px;
+    --tamaño-minimo-tarjetas: 288px;
+    --tamaño-minimo-tarjetas: 230px;
+    /* Color */
+    --nav-color: #1c1d20;
+    --texto-backgroun-negro: #fff;
+    --blanco-estrella: #FAF7F2;
+    --verde-militar: #394C38;
+    --negro: #000000;
+    --vino-duro: #2B021D;
+    --vino-suave: #70254e;
+    --purpura: #E5DDEA;
+    --gris: #dddbdb;
+    --gris-oscuro: #808080;
+    --gris-mas-oscuro: #333333;
+    --azul: #010028;
+    --blog: #2a3d69;
+    /* Efectos */
+    --sombra-oscura:0  4px 8px rgba(0, 0, 0, 0.16);
+}
+
+/* Buenas practicas */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif; /* Fuente del proyecto */
+}
+
+/* Header */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--nav-color);
+    height: 30px;
+}
+
+header nav .normal-nav {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .normal-nav a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: var(--texto-backgroun-negro);
+}
+
+header .header--text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: var(--tamaño-minimo);
+    height: 150px;
+    text-align: center;
+    background: var(--nav-color);   
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header--text-container h3{
+    margin-bottom: 10px;
+    margin-top: 15px;   
+    color: var(--texto-backgroun-negro);
+    font-size: var(--h3-size);
+    font-weight: bold;
+    line-height: 3.2rem;
+}
+
+.header--text-container p{
+    margin-bottom: 15px;
+    color: var(--texto-backgroun-negro);
+    font-size: var(--p-size);
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 800px) {
+    .header--text-container p {
+        text-align: center;
+    }
+}
+
+/* Main - sobre mi - */
+
+main {
+    margin-top: 110px;
+    width: 100%;
+    height: auto;
+    background-color: var(--texto-backgroun-negro);
+}
+
+.main-intro-container {
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-section-intro--text {
+    width: 90%;
+    min-width: var(--tamaño-minimo-tarjetas);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.main-section-intro--text h2 {
+    color: var(--verde-militar);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: var(--h2-size);
+    font-weight: bold;
+}
+
+.main-section-intro--text p {
+    color: var(--negro);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: var(--p-size);
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* iframe */
+
+.iframe {
+    width: 300px;
+    height: 1673px;
+}
+
+
+@media screen and (min-width: 570px) {
+    .iframe {
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 731px) {
+    .iframe {
+        width: 600px;
+    }
+}
+
+/* Footer */
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--nav-color);
+    height: 20px;
+}
+
+footer nav .politicas {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .politicas a {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: var(--texto-backgroun-negro);
+}
+
+.derechos {
+    width: 100%;
+    background-color: var(--gris-mas-oscuro);
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100;
+    min-width: var(--tamaño-minimo);
+    height: 50px;
+    text-align: center;
+}
+
+footer p {
+    font-size: var(--p-size);
+    font-weight: normal;
+    color: var(--purpura);
+}

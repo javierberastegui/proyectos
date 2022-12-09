@@ -75,7 +75,7 @@ header nav .normal-nav {
 }
 
 nav .normal-nav a {
-    margin-right: 20px;
+    margin-right: 15px;
     font-size: 1.5rem;
     color: var(--texto-backgroun-negro);
 }
