@@ -10,6 +10,10 @@ def python(request):
     return render(request, "page/python.html")
 
 
+def contact(request):
+    return render(request, "page/contact.html")
+
+
 # def backend(request):
 #     return HttpResponse("Esta es la vista backend")
 
