@@ -14,8 +14,5 @@ def contact(request):
     return render(request, "page/contact.html")
 
 
-# def backend(request):
-#     return HttpResponse("Esta es la vista backend")
-
-# def contacto(request):
-#     return HttpResponse("Esta es la vista contacto")
+def cv(request):
+    return render(request, "page/cv.html")
