@@ -110,13 +110,6 @@ header .header--text-container {
     font-size: var(--h2-size);
     font-weight: lighter;
 }
-
-.ola {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Main - sobre mi - */
 
 main {

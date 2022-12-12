@@ -183,6 +183,7 @@ nav .normal-nav a {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--negro);
+    line-height: 20px;
 }
 
 .category-card--body {
@@ -275,6 +276,14 @@ nav .normal-nav a {
     box-shadow: 4px  10px 10px hsla(329, 86%, 14%, 0.70);
 }
 
+.post-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
 .post-detail--card h2 {
     margin-bottom: 15px;
     font-size: var(--h2-size);
@@ -302,6 +311,33 @@ nav .normal-nav a {
     text-decoration: none;
 }
 
+.main-post-detail-2 {
+    background-color: var(--purpura);
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.main-post-detail-3 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.post-detail--card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-section-intro--text li {
+    font-size: var(--p-size);
+    color: var(--blanco-estrella);
+    line-height: 20px;
+}
+
+.ola {
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+}
 /* Main - sobre mi - */
 
 main {
