@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Esta es la descripción de Google">
+    <meta name="robots" content="index,follow">
+    <title>Este es el titulo de la pestaña web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'page/contact.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <nav>
+                <ul class="normal-nav">
+                    <li>
+                        <a href="{% url 'page:index' %}" class="href">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:python' %}" class="href">Python</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:contact' %}" class="href">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:cv' %}" class="href">Cv</a>
+                    </li>
+                </ul>
+        </section>
+        <section>
+            <div class="header--text-container">
+                <h3>Contactemos </h3>
+                <p>Esta sección de mi página está especialmente preparada para poder contactar entre nosotros,
+                    !Empezemos¡
+                <p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- seccion bajo banner -->
+        <section class="main-intro-container">
+            <div class="main-section-intro--text">
+                <h2>Formulario de contacto de Google</h2>
+                <p>Para llevar a cabo la comunicación, he realizado unas modificaciones el código interno de formularios
+                    Google, con el fin de registrar automáticamente a la persona que se quiera poner en contacto
+                    conmigo.</p>
+                <p>Una vez rellenes el formulario, a mi me llegará un correo electrónico, para yo aceptar o rechazar el
+                    contacto. Si no eres spam, me pondré en contacto contigo en la mayor brevedad posible. </p>
+                <iframe class="iframe"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfonyu8p_ySsYbfaMmy8y75uamkxYO6HoI9rPAMGul7HYL_eA/viewform?embedded=true"
+                    frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul class="politicas">
+                    <li>
+                        <a href="#" class="href">Aviso privacidad</a>
+                        <a href="#" class="href">Cookies</a>
+                    </li>
+                </ul>
+        </section>
+        <section class="derechos">
+            <p>Javier Berastegui 2022</p>
+            <p>Todos los derechos reservados</p>
+        </section>
+    </footer>
+</body>
+
+</html>

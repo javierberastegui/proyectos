@@ -74,7 +74,7 @@ header nav .normal-nav {
 }
 
 nav .normal-nav a {
-    margin-right: 20px;
+    margin-right: 15px;
     font-size: 1.5rem;
     color: var(--texto-backgroun-negro);
 }
@@ -110,13 +110,6 @@ header .header--text-container {
     font-size: var(--h2-size);
     font-weight: lighter;
 }
-
-.ola {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Main - sobre mi - */
 
 main {
@@ -151,6 +144,13 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5%;
+}
+
+@media screen and (min-width: 930px) {
+    .background-img {
+        width: 450px;
+        height: 350px;
+    }
 }
 
 .main-section-setup--text h2 {
@@ -236,6 +236,17 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 930px) {
+    .categorias-cotainer--slider {
+        justify-content: center;
+}
+}
+
 
 .categorias-container--card {
     position: relative;
@@ -405,6 +416,10 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.contact-cards--container .contact-card--link {
+    text-decoration: none;
 }
 
 /* Footer */

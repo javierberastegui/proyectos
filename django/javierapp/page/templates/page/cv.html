@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Esta es la descripción de Google">
+    <meta name="robots" content="index,follow">
+    <title>Este es el titulo de la pestaña web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'page/cv.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <nav>
+                <ul class="normal-nav">
+                    <li>
+                        <a href="{% url 'page:index' %}" class="href">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:python' %}" class="href">Python</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:contact' %}" class="href">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page:cv' %}" class="href">Cv</a>
+                    </li>
+                </ul>
+        </section>
+        <section id="categorias" class="category">
+            <div class="categorias-title">
+                <h2>Mi Curriculum Vitae</h2>
+                <p></p>
+            </div>
+            <section class="categorias-cotainer--slider">
+                <article class="categorias-container--card">
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Formación académica</h3>
+                        <p class="category-card--body">Básica</p>
+                        <p class="category-card--saving">*Finalizada</p>
+                        <a class="boton-categorias" href="#formacion-academica"><button class="category-card--ca">Seguir
+                                leyendo
+                                <span></span></button></a>
+                    </div>
+                </article>
+                <article class="categorias-container--card">
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Formación complementaria</h3>
+                        <p class="category-card--body">Actualizando</p>
+                        <p class="category-card--saving">*En curso</p>
+                        <a class="boton-categorias" href="#formacion-complementaria"><button class="category-card--ca">Seguir leyendo
+                                <span></span></button></a>
+                    </div>
+                </article>
+                <article class="categorias-container--card">
+                    <div class="category-info-container">
+                        <h3 class="category-card--title">Experiencia laboral</h3>
+                        <p class="category-card--body">Actualizando</p>
+                        <p class="category-card--saving">*En curso</p>
+                        <a class="boton-categorias" href="#experiencia-laboral"><button class="category-card--ca">Seguir leyendo
+                                <span></span></button></a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+    </header>
+
+    <main>
+        <!--
+                    Textos con background
+        <section>
+            <div class="header--text-container">
+                <h1>Introducción a la programación con Python</h1>
+            </div>
+        </section>
+        -->
+        <!-- seccion Texto -->
+        <section class="main-post-detail">
+            <div class="post-detail--title">
+                <h2 id="formacion-academica">Formación Académica</h2>
+                <p>Aquí encontrarás mi formación escolar y universitaria</p>
+            </div>
+            <section class="post-cards--container">
+                <article class="post-detail--card">
+                    <h2>1993 – 2012</h2>
+                    <h3>Bachillerato IES Andres Bello</h3>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2013 – 2020</h2>
+                    <h3>European school of management</h3>
+                    <p>Grado y MBA en administración y dirección
+                        de empresas</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2019 – 2022</h2>
+                    <h3>CEP Santa Cruz</h3>
+                    <p>Técnico de farmacia y parafarmacia</p>
+                </article>
+            </section>
+        </section>
+
+        <section class="main-post-detail-2">
+            <div class="post-detail--title">
+                <h2 id="formacion-complementaria">Formación Académica</h2>
+                <p>Aquí encontrarás mi formación escolar y universitaria</p>
+            </div>
+            <section class="post-cards--container">
+                <article class="post-detail--card">
+                    <h2>2013 – 2017</h2>
+                    <h3>Farmacia</h3>
+                    <p>Cursos de dermatología, estética y venta cruzada. (Principales laboratorios farmacéuticos)</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2016 – 2018</h2>
+                    <h3>Empresa</h3>
+                    <ul class="main-section-intro--text">
+                        <li>Curso de IRPF de 26 horas.</li>
+                        <li>Formación en python aplicada a empresa.</li>
+                        <li>Curso SEM y SEO Google Activate</li>
+                    </ul>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2017 – 2022</h2>
+                    <h3>Programación</h3>
+                    <ul class="main-section-intro--text">
+                        <li>Curso aprendizaje automático Google actívate</li>
+                        <li>Curso Machine Learning Crash Google activate</li>
+                        <li>Curso de Apps móviles de Google Activate</li>
+                        <li>Curso Elementos de Inteligencia artificial Google Activate</li>
+                        <li>Curso nivel básico, intermedio y avanzado de pro con Python</li>
+                        <li>Curso profesional git y GitHub</li>
+                        <li>Curso de programación orientada a objetos</li>
+                        <li>Curso de fastAPI y uvicorn</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <section class="main-post-detail-3">
+            <div class="post-detail--title">
+                <h2 id="experiencia-laboral">Experiencia laboral</h2>
+                <p>Aquí encontrarás mi trayectoria laboral</p>
+            </div>
+            <section class="post-cards--container">
+                <article class="post-detail--card">
+                    <h2>2009 – 2016</h2>
+                    <h3>Auxiliar de farmacia (ventas en mostrador)</h3>
+                    <p>Trabajo de cara al público y con atención personalizada. Gestión de pedidos web, recepción de
+                        pedidos e inicio en programación de páginas web.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2012 – 2014</h2>
+                    <h3>Programador de apps móvil Kotlin</h3>
+                    <p>Inicio y toma de contacto con programación de aplicaciones móviles en entornos de desarrollo
+                        Linux.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2013 – 2016</h2>
+                    <h3>Responsable del departamento de compras</h3>
+                    <p>Entrada en contacto con el departamento de compras, negociación con proveedores y administración
+                        de las promociones de la oficina de farmacia.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2013 – 2014</h2>
+                    <h3>Proyecto de exportación en Canarias</h3>
+                    <p>Elaboración de mi primer proyecto de exportación de productos de parafarmacia al extranjero.
+                        Otorgado el diploma honorífico por la CEOE de Tenerife.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2014 – 2015</h2>
+                    <h3>Departamento de administración y contabilidad</h3>
+                    <p>Recolección de datos y facturas contables, creación de sistema en nube para exportación de datos
+                        en tiempo real a la principal asesoría de la oficina de farmacia.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2015 – 2016</h2>
+                    <h3>Proyecto de importación en Canarias</h3>
+                    <p>Elaboración de mi primer proyecto de importación de productos de parafarmacia al extranjero.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2015 – 2020</h2>
+                    <h3>Departamento social media y mantenimiento de páginas web</h3>
+                    <p>Proyecto de creación de páginas web y gestión de redes sociales. Creación de campañas Google,
+                        Facebook, Instagram y negocio local.</p>
+                    <p>Redactor de blog y posicionamiento SEO de páginas web.</p>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2018 – 2020</h2>
+                    <h3>Proyecto de creación empresa</h3>
+                    <p>Proyecto de creación de empresa a todos los niveles:</p>
+                    <ul class="main-section-intro--text">
+                        <li>Fiscal y contable</li>
+                        <li>Legal</li>
+                        <li>Marketing</li>
+                        <li>Tic</li>
+                    </ul>
+                </article>
+                <article class="post-detail--card">
+                    <h2>2019 – 2022</h2>
+                    <h3>Jefe de administración y programador PYTHON</h3>
+                    <p>Directivo de empresa, elaboración de presupuestos, coordinador contable, encargado del
+                        departamento de recursos humanos, encargado del departamento de prevención de riesgos laborales,
+                        coordinador de campañas de marketing.</p>
+                    <p>Programación enfocada al análisis, flujo y manejo de datos (ciencia de datos). Backend nivel
+                        intermedio.</p>
+                </article>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul class="politicas">
+                    <li>
+                        <a href="#" class="href">Aviso privacidad</a>
+                        <a href="#" class="href">Cookies</a>
+                    </li>
+                </ul>
+        </section>
+        <section class="derechos">
+            <p>Javier Berastegui 2022</p>
+            <p>Todos los derechos reservados</p>
+        </section>
+    </footer>
+</body>
+
+</html>
