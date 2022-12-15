@@ -183,6 +183,7 @@ main {
     min-width: var(--tamaño-minimo-tarjetas);
     max-width: 900px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 .main-section-intro--text h2 {
@@ -191,6 +192,14 @@ main {
     margin-top: 25px;
     font-size: var(--h2-size);
     font-weight: bold;
+}
+
+.main-section-intro--text h3 {
+    color: var(--verde-militar);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: var(--h3-size);
+    font-weight: lighter;
 }
 
 .main-section-intro--text p {
