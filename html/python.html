@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Esta es la descripción de Google">
+    <meta name="description" content="▷  Tu web-código donde aprenderás Python con mis artículos para todos los niveles. El lenguaje de programación orientado a objetos más conocido del mundo.">
     <meta name="robots" content="index,follow">
-    <title>Este es el titulo de la pestaña web</title>
+    <title>La mejor web-código de Python. ¡Aprende YA!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/python.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'page/python.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
@@ -22,19 +23,16 @@
             <nav>
                 <ul class="normal-nav">
                     <li>
-                        <a href="#" class="href">Inicio</a>
+                        <a href="{% url 'page:index' %}" class="href">Inicio</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Python</a>
+                        <a href="{% url 'page:python' %}" class="href">Python</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Web</a>
+                        <a href="{% url 'page:contact' %}" class="href">Contacto</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="#" class="href">Cv</a>
+                        <a href="{% url 'page:cv' %}" class="href">Cv</a>
                     </li>
                 </ul>
         </section>
@@ -84,16 +82,6 @@
             </div>
             <section class="categorias-cotainer--slider">
                 <article class="categorias-container--card">
-                    <p class="etiqueta-nuevo">Nuevo</p>
-                    <div class="category-info-container">
-                        <h3 class="category-card--title">Programación</h3>
-                        <p class="category-card--body">Python</p>
-                        <p class="category-card--saving">*El contenido se ira actualizando</p>
-                        <a class="boton-categorias" href="#"><button class="category-card--ca">Seguir leyendo
-                                <span></span></button></a>
-                    </div>
-                </article>
-                <article class="categorias-container--card">
                     <p class="etiqueta-nuevo">Proximamente</p>
                     <div class="category-info-container">
                         <h3 class="category-card--title">Web</h3>
@@ -124,7 +112,7 @@
                     porporcionada en los recursos con la documentación oficial de python</p>
             </div>
             <section class="post-cards--container">
-                <a class="post-card-link" href="#" style="display:block">
+                <a class="post-card-link" href="{% url 'post:post2' %}" style="display:block">
                 <article class="post-detail--card">
                     <h2>¿Qué es una variable y cómo puedes usar los operadores lógicos en Python?</h2>
                     <p>Si buscamos un poco en el gigante de Google, una variable matemática es un símbolo utilizado para
@@ -132,7 +120,7 @@
                         dependiendo estos de otras variables, así como de una serie de parámetros y de...</p>
                     </a>
                 </article>
-                <a class="post-card-link" href="#" style="display:block">
+                <a class="post-card-link" href="{% url 'post:post1' %}" style="display:block">
                 <article class="post-detail--card">
                     <h2>Hola mundo!! Introducción a la programación con Python</h2>
                     <p>Bienvenido a mi espacio personal, mi nombre es Javier Berastegui y en esta sección mi objetivo es
