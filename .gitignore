@@ -1,5 +1,6 @@
 ## Carpetas prohibidas 
 /Archivos binarios
+*/.env
 
 ## Ignorar archivos de imagen 
 *.jpg 
