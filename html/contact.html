@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Esta es la descripción de Google">
-    <meta name="robots" content="index,follow">
-    <title>Este es el titulo de la pestaña web</title>
+    <meta name="description" content="No index - no follow">
+    <meta name="robots" content="noindex", "nofollow">
+    <meta name="googlebot" content="noindex" , "nofollow">
+    <title>Contacto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/contact.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'page/contact.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
@@ -22,19 +24,16 @@
             <nav>
                 <ul class="normal-nav">
                     <li>
-                        <a href="#" class="href">Inicio</a>
+                        <a href="{% url 'page:index' %}" class="href">Inicio</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Python</a>
+                        <a href="{% url 'page:python' %}" class="href">Python</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Web</a>
+                        <a href="{% url 'page:contact' %}" class="href">Contacto</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="#" class="href">Cv</a>
+                        <a href="{% url 'page:cv' %}" class="href">Cv</a>
                     </li>
                 </ul>
         </section>
@@ -56,8 +55,7 @@
                     Google, con el fin de registrar automáticamente a la persona que se quiera poner en contacto
                     conmigo.</p>
                 <p>Una vez rellenes el formulario, a mi me llegará un correo electrónico, para yo aceptar o rechazar el
-                    contacto. Si no eres spam, me pondré en contacto contigo en la mayor brevedad posible.</p>
-                
+                    contacto. Si no eres spam, me pondré en contacto contigo en la mayor brevedad posible. </p>
                 <iframe class="iframe"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSfonyu8p_ySsYbfaMmy8y75uamkxYO6HoI9rPAMGul7HYL_eA/viewform?embedded=true"
                     frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
