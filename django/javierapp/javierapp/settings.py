@@ -24,7 +24,18 @@ SITE_NAME = 'dev.javierberastegui'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1"
+]
+
+if not DEBUG:
+    ALLOWED_HOSTS = [
+        "javierberastegui.dev",
+        ".javierberastegui.dev",
+        "www.javierberastegui.dev"
+        "https://javierberastegui.dev"
+    ]
 
 
 # Application definition
