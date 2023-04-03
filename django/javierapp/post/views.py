@@ -8,3 +8,6 @@ def post_1(request):
 
 def post_2(request):
     return render(request, "post/post-2.html")
+
+def post_3(request):
+    return render(request, "post/post-3.html")
