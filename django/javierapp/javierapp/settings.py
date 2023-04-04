@@ -53,6 +53,7 @@ DJANGO_APPS = [
 PROJECT_APPS = [
     'page',
     'post',
+    'errores',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
